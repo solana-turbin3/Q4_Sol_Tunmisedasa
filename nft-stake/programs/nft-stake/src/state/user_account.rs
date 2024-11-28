@@ -3,7 +3,7 @@ use anchor_lang::prelude::*;
 
 
 #[account]
-#[derive(InitSapce)]
+#[derive(InitSpace)]
 
 pub struct UserAccount {
     pub points: u32,

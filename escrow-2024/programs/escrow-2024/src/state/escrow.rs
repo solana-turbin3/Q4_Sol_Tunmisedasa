@@ -8,7 +8,8 @@ pub struct Escrow {
     pub maker: Pubkey,
     pub mint_a: Pubkey,
     pub mint_b: Pubkey,
-    pub receive: u64,
+,
+pub(crate) recieve: u64    pub receive: u64,
     pub bump: u64,
 }
 

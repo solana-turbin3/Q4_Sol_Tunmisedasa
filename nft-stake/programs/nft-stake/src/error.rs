@@ -5,4 +5,7 @@ use anchor_lang::prelude::*;
 pub enum ErrorCode {
     #[msg("maximum stake reached")]
     MaxStakeReached,
+
+    #[msg("freeze period not passed")]
+    FreezePeriodNotPassed,
 }
