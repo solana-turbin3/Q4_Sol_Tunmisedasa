@@ -99,7 +99,7 @@ impl<'info> Stake<'info> {
         self.stake_account.set_inner(StakeAccount{
             owner: self.user.key(),
             mint: self.mint.key(),
-            last_update: Clock::get()?.unix_timestamp,
+            staked_at: Clock::get()?.unix_timestamp,
             bump: bumps.stake_account,
         });
         
