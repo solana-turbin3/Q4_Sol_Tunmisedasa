@@ -13,7 +13,7 @@ describe("nft-stake", () => {
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
 
-  const program = anchor.workspace.NftStaking as Program<NftStake>;
+  const program = anchor.workspace.NftStake as Program<NftStake>;
 
   const umi = createUmi(provider.connection);
 
